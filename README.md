@@ -1,4 +1,4 @@
-# Genchat Frontend
+# Genchat
 
 ## What is this project?
 
@@ -16,8 +16,40 @@ Before running this application locally, ensure you have the following installed
 
 - Python (version 3.6 or higher)
 - pip (Python package installer)
+- Node.js (version 12 or higher)
+- npm (Node package manager)
 
 ## How to Run
+
+### Backend (Nest.js)
+
+1. Clone the backend repository to your local machine:
+
+    ```bash
+    git clone https://github.com/your-username/genchat-backend.git
+    ```
+
+2. Navigate to the backend project directory:
+
+    ```bash
+    cd genchat-backend
+    ```
+
+3. Install the required dependencies using npm:
+
+    ```bash
+    npm install
+    ```
+
+4. Start the Nest.js server:
+
+    ```bash
+    npm run start:dev
+    ```
+
+5. The backend server will start running on your local machine.
+
+### Frontend (Streamlit)
 
 1. Clone this repository to your local machine:
 
@@ -25,7 +57,7 @@ Before running this application locally, ensure you have the following installed
     git clone https://github.com/your-username/genchat-frontend.git
     ```
 
-2. Navigate to the project directory:
+2. Navigate to the frontend project directory:
 
     ```bash
     cd genchat-frontend
@@ -43,7 +75,7 @@ Before running this application locally, ensure you have the following installed
     streamlit run frontend.py
     ```
 
-5. The application will start running on your local machine. Open your web browser and go to the following URL:
+5. The frontend application will start running on your local machine. Open your web browser and go to the following URL:
 
     ```
     http://localhost:8501
@@ -67,4 +99,3 @@ Contributions are welcome! If you find any bugs or have suggestions for improvem
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
