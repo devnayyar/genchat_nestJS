@@ -1,73 +1,70 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Genchat Frontend
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+## What is this project?
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+This project is the frontend application for Genchat, a web-based chat application that utilizes a backend API for user authentication and interaction with the Gemini API for generating responses to user queries. The frontend is built using Streamlit, a Python library for building interactive web applications.
 
-## Description
+## Features
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- User authentication and signup
+- Real-time chat interface powered by the Gemini API
+- Simple and intuitive user interface
 
-## Installation
+## Prerequisites
 
-```bash
-$ npm install
-```
+Before running this application locally, ensure you have the following installed:
 
-## Running the app
+- Python (version 3.6 or higher)
+- pip (Python package installer)
 
-```bash
-# development
-$ npm run start
+## How to Run
 
-# watch mode
-$ npm run start:dev
+1. Clone this repository to your local machine:
 
-# production mode
-$ npm run start:prod
-```
+    ```bash
+    git clone https://github.com/your-username/genchat-frontend.git
+    ```
 
-## Test
+2. Navigate to the project directory:
 
-```bash
-# unit tests
-$ npm run test
+    ```bash
+    cd genchat-frontend
+    ```
 
-# e2e tests
-$ npm run test:e2e
+3. Install the required dependencies using pip:
 
-# test coverage
-$ npm run test:cov
-```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-## Support
+4. Start the Streamlit application:
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+    ```bash
+    streamlit run frontend.py
+    ```
 
-## Stay in touch
+5. The application will start running on your local machine. Open your web browser and go to the following URL:
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+    ```
+    http://localhost:8501
+    ```
+
+6. You should see the Genchat homepage where you can login or signup to access the chat interface.
+
+## Configuration
+
+Before running the application, make sure to configure the backend API URLs in the `frontend.py` file. Update the following variables with the appropriate URLs:
+
+- `BASE_URL`
+- `LOGIN_URL`
+- `SIGNUP_URL`
+- `GENCHAT_URL`
+
+## Contributing
+
+Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
 
 ## License
 
-Nest is [MIT licensed](LICENSE).
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
