@@ -1,9 +1,8 @@
-// refresh-token.service.ts
-
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { UnauthorizedException } from '@nestjs/common';
+import { v4 as uuidv4 } from 'uuid';
 
 @Injectable()
 export class RefreshTokenService {
@@ -13,8 +12,8 @@ export class RefreshTokenService {
   ) {}
 
   async generateRefreshToken(userId: string): Promise<string> {
-    // Generate a random refresh token
-    const refreshToken = this.generateRandomToken();
+    // Generate a UUID as the refresh token
+    const refreshToken = uuidv4();
 
     // Save the refresh token to the database
     await this.refreshTokenModel.create({ userId, token: refreshToken });
@@ -32,16 +31,5 @@ export class RefreshTokenService {
 
     // Return the userId associated with the refresh token
     return refreshTokenDoc.userId;
-  }
-
-  private generateRandomToken(): string {
-    // Generate a random alphanumeric token
-    const tokenLength = 64;
-    const charset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    let token = '';
-    for (let i = 0; i < tokenLength; i++) {
-      token += charset.charAt(Math.floor(Math.random() * charset.length));
-    }
-    return token;
   }
 }

@@ -10,6 +10,11 @@ export class GenchatService {
     private readonly configService: ConfigService,
   ) {}
 
+  /**
+   * Generate a response to a user query using Google Generative AI.
+   * @param chatInputDto - The user query input DTO.
+   * @returns Observable<string> - An observable emitting the generated response.
+   */
   chat(chatInputDto: ChatInputDto): Observable<string> {
     return new Observable<string>(observer => {
       // Extract text from the DTO
