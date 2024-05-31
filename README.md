@@ -78,9 +78,9 @@ Before running the application, make sure to configure the backend API URLs in t
 
 If you want to check the backend APIs, you can visit the following route on your local machine:
 
-    ```
+
     http://localhost:3000/api
-    ```
+
 This route will provide you access to the backend APIs for authentication and interaction with the Gemini API.
 
 
