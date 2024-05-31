@@ -12,7 +12,7 @@ async function bootstrap() {
   // Swagger setup
   const config = new DocumentBuilder()
     .setTitle('GenChatAPI')
-    .setDescription('API description')
+    .setDescription('API for GenChat application')
     .setVersion('1.0')
     .build();
   const document = SwaggerModule.createDocument(app, config);
@@ -20,5 +20,8 @@ async function bootstrap() {
 
   // Start listening
   await app.listen(3000);
+
+  console.log('GenChatAPI is running');
+  console.log('API documentation available at http://localhost:3000/api');
 }
 bootstrap();
