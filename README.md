@@ -68,7 +68,13 @@ Before running this application locally, ensure you have the following installed
 ## Configuration
 
 Before running the application, make sure to configure the backend API URLs in the `frontend.py` file. Update the following variables with the appropriate URLs:
-
+1. Create ```.env``` file
+   ```
+   DB_URL= ...
+   JWT_SECRET= ...
+   JWT_EXPIRES = ...
+   GENMINI_API = ...
+   ```
 - `BASE_URL`
 - `LOGIN_URL`
 - `SIGNUP_URL`
