@@ -29,59 +29,41 @@ Before running this application locally, ensure you have the following installed
     git clone https://github.com/your-username/genchat-backend.git
     ```
 
-2. Navigate to the backend project directory:
-
-    ```bash
-    cd genchat-backend
-    ```
-
-3. Install the required dependencies using npm:
+2. Install the required dependencies using npm:
 
     ```bash
     npm install
     ```
 
-4. Start the Nest.js server:
+3. Start the Nest.js server:
 
     ```bash
-    npm run start:dev
+    npm run start
     ```
 
 5. The backend server will start running on your local machine.
 
 ### Frontend (Streamlit)
 
-1. Clone this repository to your local machine:
-
-    ```bash
-    git clone https://github.com/your-username/genchat-frontend.git
-    ```
-
-2. Navigate to the frontend project directory:
-
-    ```bash
-    cd genchat-frontend
-    ```
-
-3. Install the required dependencies using pip:
+1. Install the required dependencies using pip:
 
     ```bash
     pip install -r requirements.txt
     ```
 
-4. Start the Streamlit application:
+2. Start the Streamlit application:
 
     ```bash
     streamlit run frontend.py
     ```
 
-5. The frontend application will start running on your local machine. Open your web browser and go to the following URL:
+3. The frontend application will start running on your local machine. Open your web browser and go to the following URL:
 
     ```
     http://localhost:8501
     ```
 
-6. You should see the Genchat homepage where you can login or signup to access the chat interface.
+4. You should see the Genchat homepage where you can login or signup to access the chat interface.
 
 ## Configuration
 
@@ -91,6 +73,16 @@ Before running the application, make sure to configure the backend API URLs in t
 - `LOGIN_URL`
 - `SIGNUP_URL`
 - `GENCHAT_URL`
+
+## Accessing APIs
+
+If you want to check the backend APIs, you can visit the following route on your local machine:
+
+    ```
+    http://localhost:3000/api
+    ```
+This route will provide you access to the backend APIs for authentication and interaction with the Gemini API.
+
 
 ## Contributing
 
