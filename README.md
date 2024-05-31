@@ -23,10 +23,10 @@ Before running this application locally, ensure you have the following installed
 
 ### Backend (Nest.js)
 
-1. Clone the backend repository to your local machine:
+1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/your-username/genchat-backend.git
+    git clone https://github.com/devnayyar/genchat_nestJS.git
     ```
 
 2. Install the required dependencies using npm:
@@ -68,7 +68,13 @@ Before running this application locally, ensure you have the following installed
 ## Configuration
 
 Before running the application, make sure to configure the backend API URLs in the `frontend.py` file. Update the following variables with the appropriate URLs:
-
+1. Create ```.env``` file
+   ```
+   DB_URL= ...
+   JWT_SECRET= ...
+   JWT_EXPIRES = ...
+   GENMINI_API = ...
+   ```
 - `BASE_URL`
 - `LOGIN_URL`
 - `SIGNUP_URL`
@@ -78,9 +84,9 @@ Before running the application, make sure to configure the backend API URLs in t
 
 If you want to check the backend APIs, you can visit the following route on your local machine:
 
-    ```
+
     http://localhost:3000/api
-    ```
+
 This route will provide you access to the backend APIs for authentication and interaction with the Gemini API.
 
 
