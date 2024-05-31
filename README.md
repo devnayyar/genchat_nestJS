@@ -23,10 +23,10 @@ Before running this application locally, ensure you have the following installed
 
 ### Backend (Nest.js)
 
-1. Clone the backend repository to your local machine:
+1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/your-username/genchat-backend.git
+    git clone https://github.com/devnayyar/genchat_nestJS.git
     ```
 
 2. Install the required dependencies using npm:
